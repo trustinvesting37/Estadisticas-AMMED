@@ -1,0 +1,175 @@
+/*
+-----------------------------------------VENTANA EMERGENTE-----------------------------------------
+*/
+
+.overlay{
+    background: rgba(0,0,0,.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    background: rgba(0,0,0,.3);
+    z-index: 10;
+}
+
+.overlay.active{
+    visibility: visible;
+}
+
+
+.popup{
+    background: #f8f8f8;
+    border-radius: 3px;
+    padding: 30px;
+    text-align: center;
+    width: 500px;
+    transition: .7s ease all;
+    transform: scale(0.7);
+    opacity: 0;
+
+
+
+}
+
+.mod{
+    background: var(--color2);
+    border: none;
+    width: 100px;
+}
+
+.popup .btn-cerrar-popup{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #BBBBBB;
+    transition: .3 ease all;
+
+}
+
+.popup .btn-cerrar-popup:hover{
+    color: black;
+}
+
+.popup h3{
+    font-size: 26px;
+    font-weight: 300;
+    opacity: 0;
+}
+
+.popup .icon-llave{
+    margin: 20px auto ;
+
+
+}
+
+.popup form input{
+    font-weight: 300;
+}
+
+/*---------------------ANIMACIONES--------------------------------------*/
+
+.popup.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.popup.active h3 {
+    animation: entradaTitulo 1s ease .5s forwards;
+    
+}
+
+@keyframes entradaTitulo{
+    from{
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.icon-llave{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    background: var(--color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.icon-llave i{
+    text-align: center;
+    font-size: 25px;
+}
+
+@media (max-height: 500px) {
+    .icon-llave{
+        width: 30px;
+        height: 30px;
+    }
+    .icon-llave i{
+        font-size:10px
+    }
+
+    .popup h3{
+        font-size: 22px;
+    }
+    .popup{
+        margin-top: 100px;
+        width: 90%;
+        padding: 2;
+       
+    }
+
+}
+
+@media (max-height: 400px) {
+    .icon-llave{
+        display: none;
+    }
+    .popup h3{
+        font-size: 15px;
+        margin: 2;
+ 
+    }
+    .popup{
+        margin-top: 100px;
+        width: 90%;
+        padding: 2;
+        display: flex;
+        justify-content: space-between;
+      
+    }
+    .form-control{
+        padding: 1;
+        margin: 0;
+        
+    }
+
+}
+@media (max-width: 600px){
+    .popup{
+        margin-top: 200px;
+        width: 90%;
+    }
+    
+    .icon-llave i{
+        font-size:20px
+    }
+
+    .popup h3{
+        font-size: 22px;
+    }
+
+}
+

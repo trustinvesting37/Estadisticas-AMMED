@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    color: #566787;
+    background: #f5f5f5;
+    padding-bottom: 100px;
+    font-family: 'Roboto', sans-serif;
+}
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+
+.contenedor{
+    height: 80%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.logo{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.posicionar img{
+    width: 40px;
+    height: 40px;
+}
+
+.posicionar{
+    
+    position: relative;
+}
+
+
+
+.posicionar::after{
+    display: block;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+    border-radius: 50%;
+    border: 3px solid rgb(245, 245, 245);
+    width: 15px;
+    height: 15px;
+    color: green;
+    background: rgb(4, 175, 4);
+}
+
+
+.admi{
+    margin-left: 15px;
+    font-weight: 300;
+}
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+    background: #3233661f;
+    padding: 70px 0 60px;
+    margin-top: 50px;
+  }
+  
+  .counts .count-box {
+    padding: 30px 30px 25px 30px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background: rgb(5, 128, 133);
+    color: white;
+    font-size: 25px;
+    
+    border-radius: 5px;
+    cursor: pointer;
+  
+  }
+
+  .counts .count-box:hover{
+      background: rgb(3, 94, 97);
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .count-box .iconos{
+      position: absolute;
+      top: -25px;
+      left: 20;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      background: rgb(5, 128, 133);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  
+  .counts .count-box p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+  }
+
+  /*--------------------------------------------------------------
+# Table
+--------------------------------------------------------------*/
+.table-responsive {
+    margin: 30px 0;
+    transition: .7s ease all;
+}
+.table-wrapper {
+    min-width: 1000px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.table-title {
+    padding-bottom: 10px;
+    margin: 0 0 10px;
+    min-width: 100%;
+}
+.table-title h2 {
+    margin: 8px 0 0;
+    font-size: 22px;
+}
+.search-box {
+    position: relative;        
+    float: right;
+}
+.search-box input {
+    height: 34px;
+    border-radius: 20px;
+    padding-left: 35px;
+    border-color: #ddd;
+    box-shadow: none;
+}
+.search-box input:focus {
+    border-color: #3FBAE4;
+}
+.search-box i {
+    color: #a0a5b1;
+    position: absolute;
+    font-size: 19px;
+    top: 8px;
+    left: 10px;
+}
+table.table tr th, table.table tr td {
+    border: none;
+}
+table.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fcfcfc;
+}
+table.table-striped.table-hover tbody tr:hover {
+    background: #f5f5f5;
+}
+table.table th i {
+    font-size: 13px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+table.table td:last-child {
+    width: 130px;
+}
+table.table td a {
+    color: #a0a5b1;
+    display: inline-block;
+    margin: 0 5px;
+}
+table.table td a.view {
+    color: #03A9F4;
+}
+table.table td a.edit {
+    color: #FFC107;
+}
+table.table td a.delete {
+    color: #E34724;
+}
+table.table td i {
+    font-size: 19px;
+}    
+.pagination {
+    float: right;
+    margin: 0 0 5px;
+}
+.pagination li a {
+    border: none;
+    font-size: 95%;
+    width: 30px;
+    height: 30px;
+    color: #999;
+    margin: 0 2px;
+    line-height: 30px;
+    border-radius: 30px !important;
+    text-align: center;
+    padding: 0;
+}
+.pagination li a:hover {
+    color: #666;
+}	
+.pagination li.active a {
+    background: #03A9F4;
+}
+.pagination li.active a:hover {        
+    background: #0397d6;
+}
+.pagination li.disabled i {
+    color: #ccc;
+}
+.pagination li i {
+    font-size: 16px;
+    padding-top: 6px
+}
+.hint-text {
+    float: left;
+    margin-top: 6px;
+    font-size: 95%;
+}  
+
+/*
+Animaciones
+*/
+
+
+
+.derecha{
+    display: none;
+}
+
+
+.dis{
+    display: block;
+}
+
+.abajo{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dimen{
+    width: 50px;
+    height: 50px;
+}
+
+.icon-edit{
+    color: #FFC107;
+    cursor: pointer;
+}
+
+.icon-trash{
+    color: #E34724;
+    cursor: pointer;
+}
+
+.cont{
+    padding: 100px 0px; 
+}
+.div1, .div2, .div3, .div4, .div5{
+    width: 95%;
+    margin: auto ;
+}
+
+
+/*
+Formularios
+*/
+
+
+
+.form1,.form2,.form3,.form4,.form5{
+    display: none;
+}
+
+
+
+
+/*
+Responsive
+*/
+
+.acomodar{
+    margin-top: 35px;
+}
+
+@media (max-width: 994px) {
+    .acomodar{
+        margin: 0;
+    }
+
+}
+
+.edit{
+    color: white;
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>AMMED Analytics</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link rel="icon" type="image/jpg"   href="assets/img/logito2.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"> <!--fuentes de servicio-->
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Fontello -->
+  <link href="assets/css/css/fontello.css" rel="stylesheet">
+  <link rel="stylesheet" href="fuentes/fontello-235bc0aa/css/fontello.css">
+
+  <!-- Popup CSS -->
+  <link rel="stylesheet" href="popup/popup.css">
+
+  <!-- Chart JS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi icon-globe"></i> <a href="https://academiamilitardemedicina.com.ve/">academiamilitardemedicina.com.ve/</a>
+
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo-header">
+        <a href="index.html"><img src="assets/img/logosamu2.png" alt="" class="logo-h"></a>
+      </div>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0 justify-content-end">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Principal</a></li>
+          <li><a class="nav-link scrollto" href="#estadistica">Antecedentes</a></li>
+          <li><a class="nav-link scrollto" href="#recuperacion">Hábitos</a></li>
+          <li><a class="nav-link scrollto" href="#services">Noticias</a></li>
+          <li class="dropdown"><a href="#"><span>Más</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="Numero-de-Contagios/index.html#contagios">Patologías</a></li>
+              <li><a class="nav-link scrollto" href="Sintomaticos-y-asintomaticos/index.html#SyA">Sintomas Ult. 3 meses</a></li>
+              <li><a class="nav-link scrollto" href="Registro/index.html#registro">Atención Medica</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#appointment" class="appointment-btn scrollto btn-popup" id="btn-popup">Administrador </a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <img src="assets/img/imagenv5.png" alt="">
+  </section><!-- End Hero -->
+
+  <!-- ======= Counts Section ======= -->
+  <main id="main">
+    <!-- ======= ChartJS Estadistica de Pasientes ======= -->
+    <div class="estadisticas" id="estadistica">
+      <div  class="section-title">
+        <h2>Antecedentes Personales de Importancia</h2>
+      </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <canvas id="myChart" height="300px"></canvas>
+
+          </div>
+          <div class="col-6">
+            <canvas id="myChart2" height="200px"></canvas>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" id="recuperacion">
+
+        <div  class="section-title">
+          <h2>Hábitos Psicobiologicos</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-10 ">
+            <canvas id="myChart5" ></canvas>
+          </div>
+
+          <!--
+
+
+            <div class="col-lg-6 d-flex align-items-stretch">
+              <div class="icon-boxes d-flex flex-column justify-content-center">
+                <div class="row">
+                  <div class="col-xl-6 d-flex align-items-stretch">
+                    <div class="icon-box mt-4 mt-xl-0">
+                      <div class="contenedor-imagen">
+  
+                        <img src="assets/img/sociedad-infec.png" alt="">
+                      </div>
+                      <br>
+                      <p>No hay tratamiento para personas asintomáticas. Si tienes una prueba PCR positiva de covid-19 pero no has desarrollado síntomas, la Sociedad Venezolana de Infectología recomienda aislamiento por 10 días.</p>
+                      <a href="https://prodavinci.com/cual-es-el-tratamiento-para-un-caso-asintomatico-de-covid-19/" class="principio">Mas Información</a>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 d-flex align-items-stretch">
+                    <div class="icon-box mt-4 mt-xl-0">
+                      
+                      <div class="contenedor-imagen2">
+  
+                        <img src="assets/img/patria.png" alt="">
+                      </div>
+                      <br>
+                      <p>Si presentas alguno de los siguientes síntomas debes aislarte para evitar posibles contagios: fiebre, tos, dolor de garganta, malestar, dolor de cabeza, dolor muscular, fatiga, pérdida parcial o total del olfato y el gusto, y diarrea. </p>
+                      <a href="https://covid19.patria.org.ve/prevencion-control-covid19/deteccion-diagnostico-tratamiento/" class="principio">Mas Información</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            -->
+          </div><!-- End .content-->
+          </div>
+
+      </div>
+    </section>
+    <!-- End Why Us Section -->
+    
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Noticias</h2>
+        
+        </div>
+
+
+          <div class="row centrar">
+              <div class="col-md-4 ">
+                  <div class="profile-card-4 text-center">
+                      <img src="assets/img/Foto-C.png" class="img img-responsive">
+                      <div class="profile-content">
+                        
+                        <div class="profile-description">
+                          <h4 class="tit-noticias">Avanza obra del Centro de Diagnóstico Integral “Albero Lovera” en Caracas</h4>
+                          <p class="des-noticia">Este martes fue inspeccionado el Centro de Diagnóstico Integral (CDI) Albero Lovera, en el sector Hornos de Cal, en Caracas; promesa del Comandante Hugo Chávez, así lo manifestó el primer vicepresidente del Partido Socialista Unido de Venezuela (PSUV), Diosdado Cabello.</p> 
+                        </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-md-4 ">
+                <div class="profile-card-4 text-center">
+                    <img src="assets/img/IMG20210508WA0227.jpg" class="img img-responsive">
+                    <div class="profile-content">
+                        
+
+                        <div class="profile-description">
+                          <h4 class="tit-noticias">Ministerio de Salud  fortalece Sistema de Vigilancia y Control de la COVID-19</h4>
+                          <p class="des-noticia">El ministro del Poder Popular para la Salud, Dr. Carlos Alvarado, realizó una videoconferencia con todos los Directores Regionales de Salud, Autoridades Únicas de Salud  y Epidemiólogos Regionales, a fin de verificar el manejo de la COVID-19 en los estados,  municipios y Áreas de Salud Integral Comunitarias (Asic), además de bajar nuevas orientaciones a los estados.</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 ">
+              <div class="profile-card-4 text-center">
+                  <img src="assets/img/PRESIDENTE-2-2.jpg" class="img img-responsive">
+                  <div class="profile-content">
+                    <div class="profile-description">
+                      <h4 class="tit-noticias">Próximamente llegará a Venezuela la Sputnik Light y la vacuna Janssen</h4>
+                      <p class="des-noticia">Este martes durante la Jornada de Salud del Gobierno Bolivariano, el presidente de la República, Nicolás Maduro, anunció que próximamente llegarán a Venezuela las vacunas contra la COVID-19, Sputnik Light y Janssen.</p> 
+                    </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-4 ">
+            <div class="profile-card-4 text-center">
+                <img src="assets/img/PRESIDENTE-4-1.jpg" class="img img-responsive">
+                <div class="profile-content">
+                  <div class="profile-description">
+                    <h4 class="tit-noticias">Más de 1 millón 460 mil niños y niñas serán vacunados en Jornada de las Américas que se desarrolla en el país</h4>
+                    <p class="des-noticia">Este martes, el ministro del Poder Popular para la Salud, Carlos Alvarado, informó que más 1 millón 460 mil niños y niñas serán vacunados en 5.440 puntos del país en la Jornada de las Américas.</p> 
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 ">
+          <div class="profile-card-4 text-center">
+              <img src="assets/img/Vicepresidencia-de-la-Republica.jpg" class="img img-responsive">
+              <div class="profile-content">
+                <div class="profile-description">
+                  <h4 class="tit-noticias">Arriban a Venezuela 25 toneladas de insumos médicos provenientes de China para combatir la COVID-19</h4>
+                  <p class="des-noticia">Un total de 25 toneladas de insumos médicos arribaron al Aeropuerto Internacional de Maiquetía “Simón Bolívar”, en el estado La Guaira, proveniente de la República Popular China que van destinados a los estados con más alto índice de pacientes infectados por la COVID-19 en el país.</p> 
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4 ">
+        <div class="profile-card-4 text-center">
+            <img src="assets/img/wha-empty-plenary.png" class="img img-responsive">
+            <div class="profile-content">
+              <div class="profile-description">
+                <h4 class="tit-noticias">La Asamblea Mundial de la Salud se centrará en el fin de la pandemia de COVID-19 y en la preparación para la siguiente pandemia</h4>
+                <p class="des-noticia">En un año en el que la COVID-19 amenaza la salud y el bienestar de todos los habitantes del planeta, la 74.ª Asamblea Mundial de la Salud hará hincapié en la urgencia de poner fin a la actual pandemia y prevenir la próxima construyendo un mundo más sano, más seguro y más justo.</p> 
+              </div>
+            </div>
+        </div>
+    </div>
+             
+          </div>
+     
+
+      </div>
+    </section><!-- End Services Section -->
+    
+
+    
+
+    
+
+  </main><!-- End #main -->
+
+  <!--Popup-->
+  <div class="overlay" id="overlay">
+    <div class="popup shadow" >
+      <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup close"><i class="icon-cancel"></i></a>
+      <div class="icon-llave shadow ">
+        <i class="icon-key"></i>
+      </div>
+      <h3 class="mb-3">Ingrese Contaseña de Seguridad</h3>
+      <form action="" class="form">
+        <div class="contenedor-inputs">
+          <input type="password" name="" id="" placeholder="Clave" class="form-control mb-1 clave">
+        </div>
+        <br>
+        <input type="submit" class="btn btn-primary  mod" value="Confirmar">
+      </form>
+    </div>
+  </div>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>AMMEDAnalytics</span></strong>. Todos Los Derechos Reservados
+        </div>
+       
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+  <!-- Jquery -->
+  <script src="assets/js/jquey/jquey.js"></script>
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
+  <script src="assets/js/codigo.js"></script>
+
+  <!-- Codigo para el Poput o Ventana emergente de administrador-->
+  <script src="popup/popup.js"></script>
+
+</body>
+
+</html>

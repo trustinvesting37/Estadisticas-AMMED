@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    
+}
+
+
+.imagen{
+    width: 48px;
+}
+
+.bg{
+    position: relative;
+    background-image: url("../image/componente1.png");
+    background-position: center center;
+    background-size: cover;
+
+}
+
+.componente2, .componente3, .componente4{
+    position: absolute;
+
+}
+
+.componente2{
+    bottom: 5px;
+    right: 5px;
+    height: 40%;
+}
+
+.componente3 {
+    bottom: 40px;
+    left: 5px;
+    height: 20%;
+}
+
+.componente4{
+    top: 5px;
+    left: 5px;
+    height: 20%;
+}
+
+
+.modificar{
+    margin: auto;
+    display: block;
+    height: 90vh;
+}
+
+.formulario{
+    width: 75%;
+    margin: auto ;
+}
+
+.boton{
+    background: #1aacb0;
+    color: white;
+}
+
+.boton:hover{
+    background: #13898d;
+    color: rgb(219, 219, 219);
+}
+
+@media (max-width: 1200px) {
+    .componente3 {
+        bottom: 27%;
+        left: 5px;
+        height: 20%;
+    }
+
+}
+

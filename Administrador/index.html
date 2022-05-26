@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Administrador</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+
+    <!--Estilos Bootstrap-->
+    <link rel="icon" type="image/jpg"   href="assets/img/logito2.png">
+    <link rel="stylesheet" href="fontello-9ce62d59/css/fontello.css">
+
+    <!--Estilos Bootstrap-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+    <!--Estilos Css-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    </head>
+    <body>
+
+        <header id="header" class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+                <div class="container-fluid">
+                    <div class="logo">
+                      <div class="posicionar">
+                          <img src="assets/img/profile.png" alt="">
+                          <div class="after"></div>
+                      </div>
+                          <span class="admi h3">Administrador</span> 
+                    </div>
+                    <div class="" id="navbarSupportedContent col-lg-3">
+                      <button class="btn btn-outline-success" type="submit">Cerrar Sesion</button>
+                    </div>
+                </div>
+              </nav>
+        </header><!-- End Header -->
+
+        <section id="counts" class="counts">
+            <div class="container">
+        
+              <div class="row">
+        
+                <div class="col-lg-3 col-md-6 sec1">
+                  <div class="count-box" id="count-box1">
+                    <div class="iconos">
+                        <i class="fas icon-edit-1 "></i>
+                    </div>
+                    <p class="vacunados">Registro</p>
+                  </div>
+     
+                </div>
+        
+             
+
+             
+                    <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 sec4 mt-5 sec5">
+                        <div class="count-box" id="count-box4">
+                          <div class="iconos">
+                              <i class="fas icon-doc"></i>
+                          </div>
+                          <p class="fallecidos">Noticias</p>
+                        </div>
+                    </div>
+            
+                
+              </div>
+            </div>
+        </section><!-- End Counts Section -->
+
+
+        
+<div class="cont">
+
+
+    <div class="table-responsive div1" id="div1">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6"><h2><b>Registro</b></h2></div>
+                    
+                    <div class="col-sm-4">
+                        <div class="search-box">
+                            <i class="material-icons">&#xE8B6;</i>
+                            <input type="text" class="form-control" placeholder="Search&hellip;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                    <tr>
+                        
+                        
+                        <th>#</th>
+                        <th>nombre</th>
+                        <th>Apellido</th>
+                        <th>Genero</th>
+                        <th>Año</th>
+                   
+                    </tr>
+                </thead>
+                <tbody id="mostrarVacunados">
+                  
+                   
+                </tbody>
+            </table>
+            <d iv class="clearfix abajo mt-2">
+                <div class="">
+                    <button class="btn btn-primary btn-vac" >Agregar <i class="icon-plus"></i></button>
+                </div>
+                <ul class="pagination">
+                    <li class="page-item"><a href="#" class="page-link atras"><i class="fa fa-angle-double-left"></i></a></li>
+                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                    <li class="page-item"><a href="#" class="page-link alante"><i class="fa fa-angle-double-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+      
+
+    <div class="table-responsive derecha div2">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2><b>Pacientes en Recuperación</b></h2></div>
+                    <div class="col-sm-4">
+                        <div class="search-box">
+                            <i class="material-icons">&#xE8B6;</i>
+                            <input type="text" class="form-control" placeholder="Search&hellip;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre<i class="fa fa-sort"></i></th>
+                        <th>Apellidos</th>
+                        <th>Genero<i class="fa fa-sort"></i></th>
+                        <th>Edad</th>
+                        <th>Año</th>
+                        <th>Cedula<i class="fa fa-sort"></i></th>
+                        <th>Estado</th>
+                        <th>Condición</th>
+                        <th>Opciones</th>
+                        <th>Estado Posterior</th>
+                    </tr>
+                </thead>
+                <tbody id="mostrarRecuperacion">
+                     
+                </tbody>
+            </table>
+            <div class="clearfix abajo mt-2">
+                <div class="">
+                    <button class="btn btn-primary btn-recu" >Agregar <i class="icon-plus"></i></button>
+                </div>
+                <ul class="pagination">
+                    <li class="page-item disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                    <li class="page-item"><a href="#" class="page-link"><i class="fa fa-angle-double-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+
+    <div class="table-responsive derecha div3">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2><b>Pacientes Recuperados</b></h2></div>
+                    <div class="col-sm-4">
+                        <div class="search-box">
+                            <i class="material-icons">&#xE8B6;</i>
+                            <input type="text" class="form-control" placeholder="Search&hellip;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre<i class="fa fa-sort"></i></th>
+                        <th>Apellidos</th>
+                        <th>Año</th>
+                        <th>Genero<i class="fa fa-sort"></i></th>
+                        <th>Edad</th>
+                        <th>Cedula<i class="fa fa-sort"></i></th>
+                        <th>Estado</th>
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody id="mostrarRecuperados">
+                    
+                        
+                </tbody>
+            </table>
+            <div class="clearfix abajo mt-2">
+                <div class="">
+                    <button class="btn btn-primary btn-alta" >Agregar <i class="icon-plus"></i></button>
+                </div>
+                <ul class="pagination">
+                    <li class="page-item disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                    <li class="page-item"><a href="#" class="page-link"><i class="fa fa-angle-double-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+
+    <div class="table-responsive derecha div4">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2><b>Fallecidos</b></h2></div>
+                    <div class="col-sm-4">
+                        <div class="search-box">
+                            <i class="material-icons">&#xE8B6;</i>
+                            <input type="text" class="form-control" placeholder="Search&hellip;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nombre<i class="fa fa-sort"></i></th>
+                        <th>Apellidos</th>
+                        <th>Genero<i class="fa fa-sort"></i></th>
+                        <th>Edad</th>
+                        <th>Cedula<i class="fa fa-sort"></i></th>
+                        
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody id="mostrarFallecidos">
+                    
+                          
+                </tbody>
+            </table>
+            <div class="clearfix abajo mt-2">
+                <div class="">
+                    <button class="btn btn-primary btn-fa" >Agregar <i class="icon-plus"></i></button>
+                </div>
+                <ul class="pagination">
+                    <li class="page-item disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                    <li class="page-item"><a href="#" class="page-link"><i class="fa fa-angle-double-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+
+
+<div class="table-responsive  derecha div5">
+    <div class="table-wrapper">
+        <div class="table-title">
+            <div class="row">
+                <div class="col-sm-6"><h2><b>Noticias</b></h2></div>
+                
+                <div class="col-sm-4">
+                    <div class="search-box">
+                        <i class="material-icons">&#xE8B6;</i>
+                        <input type="text" class="form-control" placeholder="Search&hellip;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="table table-striped table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Título<i class="fa fa-sort"></i></th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Thomas Hardy</td>
+                    <td>89 Chiaroscuro Rd.</td>
+                    <td>
+                        <i class="icon-edit"></i>
+                        <i class="icon-trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Maria Anders</td>
+                    <td>Obere Str. 57</td>
+                    <td>
+                        <i class="icon-edit"></i>
+                        <i class="icon-trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Fran Wilson</td>
+                    <td>C/ Araquil, 67</td>
+                    <td>
+                        <i class="icon-edit"></i>
+                        <i class="icon-trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Dominique Perrier</td>
+                    <td>25, rue Lauriston</td>
+                    <td>
+                        <i class="icon-edit"></i>
+                        <i class="icon-trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Martin Blank</td>
+                    <td>Via Monte Bianco 34</td>
+                    <td>
+                        <i class="icon-edit"></i>
+                        <i class="icon-trash"></i>
+                    </td>
+                </tr>        
+            </tbody>
+        </table>
+        <div class="clearfix abajo mt-2">
+            <div class="">
+                <button class="btn btn-primary btn-not" >Agregar <i class="icon-plus"></i></button>
+            </div>
+            <ul class="pagination">
+                <li class="page-item disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                <li class="page-item"><a href="#" class="page-link">4</a></li>
+                <li class="page-item"><a href="#" class="page-link">5</a></li>
+                <li class="page-item"><a href="#" class="page-link"><i class="fa fa-angle-double-right"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>  
+</div>
+<br>
+<br>
+<br>
+
+</div>
+
+
+<div class="container">
+
+  <form class="row g-3 needs-validation contenedor-1 form1" novalidate>
+      <span class="h3 mb-3">Registro</span>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">Masculino</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba la edad del paciente. 
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">Femeninos</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba la edad del paciente. 
+        </div>
+      </div>
+      <br>
+      <span class="h4 mt-3">Antecedentes Personales de Importancia</span>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">HTA</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">DM2</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">ASMA</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">ALERGIA A MEDICAMENTOS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">NINGUNO</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <br>
+      <span class="h4 mt-3">¿Ud. ha presentado alguna de las siguientes patologias durate su periodo de estancia en la AMMED?
+      </span>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">LARINGOAMIGDALITIS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">RINOSINUCITIS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">RESFRIADO COMÚN</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">SARSCOV2 (COVID 19)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">TUBERCULOSIS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">NEUMONÍA</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">BRONQUITIS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">HEPATITIS A</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">HEPATITIS B</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">HEPATITIS DE ETIOLOGÍA NO VIRAL</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">SÍNDROME DIARREÍCO</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">VIH</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">SÍFILIS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">GONORREA</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">DENGUE</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">FIEBRE AMARILLA</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">PALUDISMO O MALARIA</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">CISTITIS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">PIELONEFRITIS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">INFECCIONES DE PIEL Y PARTES BLANDAS (ABCESOS, CELULITIS, ERISIPELA, OTROS)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">CHIKUNGUYA</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">ESCABIOSIS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">PEDICULOSIS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">PIE DE ATLETA</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">ONICOCRIPTOSIS (UÑA ENCARNADA)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">ALOPECIA</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">LITIASIS RENAL</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">GASTRITIS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">SÍNDROME DE INTESTINO IRRITABLE</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">CONJUNTIVITIS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">OTITIS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <br>
+      <span class="h4 mt-3">HÁBITOS PSICOBIOLÓGICOS
+      </span>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">FUMADOR ACTIVO
+        </label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">INGESTA DE ALCOHOL</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">INGESTA DE DROGAS PSICOTRÓPICAS ILICITAS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">CAFÉ</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">CHIMÓ</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">VAPER</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">NINGUNO</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <br>
+      <span class="h4 mt-3">DURANTE LOS ÚLTIMOS TRES (03) MESES HA PRESENTADO ALGUNO DE LOS SIGUIENTES SIGNOS O SÍNTOMAS:
+      </span>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">FIEBRE</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">DIFAGIA (DOLOR AL TRAGAR)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">HALITOSIS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">AMIGDALAS AGRANDADAS, ENROJECIDAS O CON EXSUDADO PURULENTO</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">ADENOMEGALIA (GANGLIOS INFLAMADOS)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">CONGESTIÓN NASAL
+        </label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">TUMEFACCIÓN FASCIAL A NIVEL DE MEJILLA (INFLAMACIÓN O SENSACIÓN DE PRESIÓN FASCIAL)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">ENROJECIMIENTO DE LOS OJOS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">OTALGIA</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">OTORREA</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">TOS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">DISNEA</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">MIALGIA (DOLOR MUSCULAR)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">ARTRALGIA (DOLOR EN ARTICULACIONES)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">ESCALOFRIO (TEMBLORES)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">DOLOR DE GARGANTA
+        </label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">RINORREA ANTERIOR O POSTERIOR (GOTEO NASAL)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">CEFALEA</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">DOLOR TORÁCICO
+        </label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">NAUSEAS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">VÓMITOS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">DIARREA</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">SARPULLIDO</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">HEMOPTISIS (EXPECTORACIÓN SANGUINOLENTA)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">PÉRDIDA DE PESO
+        </label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">DIAFORESIS (SUDORACIÓN EXTREMA)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">HIPOREXIA (DISMINUCIÓN DEL APETITO)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">DOLOR RETROOCULAR
+        </label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">GINGIVORRAGIA (SANGRADO A TRAVÉS DE ENCIAS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">EPISTAXIS (SANGRADO NASAL)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">MELENA (SANGRE EN HECES)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">RECTORRAGIA (SANGRADO RECTAL)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">FLATULENCIAS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">ADINAMIA O ASTENIA
+        </label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">PALIDEZ</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">OLIGURIA O ANURIA ( DISMINUCIÓN DEL VOLUMEN URINARIO)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">TENESMO VESICAL (DESEO DE ORINAR, QUE PUEDE PRESENTARSE INCLUSO CON LA VEJIGA VACÍA, CONTINUO O FRECUENTE, URGENTE, DOLOROSO, ACOMPAÑADO DE DIFICULTAD O IMPOSIBILIDAD PARA REALIZAR LA MICCIÓN, Y QUE NO ALIVIA NI AUN EFECTUADA LA MISMA )</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">TENESMO RECTAL (SENSACIÓN DE NECESIDAD DE DEFECAR, AUNQUE LOS INTESTINOS YA ESTÉN VACÍOS. ESTO PUEDE ESTAR ACOMPAÑADO DE DOLOR, CÓLICOS Y ESFUERZO PARA DEFECAR)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">DISPAREUNIA (DOLOR COITAL)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">LEUCORREA (FLUJO VAGINAL)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">FETIDEZ GENITAL
+        </label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">ICTERICIA (PIEL Y MUCOSAS AMARILLENTAS)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">COLURIA (ORINA OBSCURA)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">DISURIA (MICCIÓN DOLOROSA)</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">DOLOR LUMBAR
+        </label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <br>
+      <span class="h4 mt-3">UD. FUE TRATADO POR ALGUNO DE LOS SINTOMAS ANTERIORES (EN CASO DE SU RESPUESTA SER AFIRMATIVA CONTINUE CON LAS SIGUIENTES PREGUNTAS)
+      </span>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">SI</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">NO</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <br>
+      <span class="h4 mt-3">RECIBISTE TRATAMIENTO
+      </span>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">SI</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">NO</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <br>
+      <span class="h4 mt-3">FUE ATENDIDO POR PERSONAL MÉDICO
+      </span>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">SI</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">NO</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <br>
+      <span class="h4 mt-3">ACUDIÓ A CONSULTA MÉDICA
+      </span>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">SI</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">NO</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <br>
+      <span class="h4 mt-3">FUE ATENDIDO POR PERSONAL NO MÉDICO (SÍ SU RESPUESTA ES AFIRMATIVA ESPECIFÍQUE QUIÉN LO ATENDÍO)
+      </span>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">Sí
+        </label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">No
+        </label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">ESTUDIANTE DE MEDICINA
+        </label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">PROFESOR NO MÉDICO</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">ENFERMERO</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">ATENCIÓN ON LINE POR PERSONAL NO MÉDICO</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">AMIGO</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">OTROS</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <br>
+      <span class="h4 mt-3">UD SE AUTOMEDICÓ
+      </span>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">SI</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">NO</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <br>
+      <span class="h4 mt-3">CONOCE UD EL SIGNIFICADO DE LA PALABRA EPIDEMIOLOGÍA
+      </span>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">SI</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">NO</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <br>
+      <span class="h4 mt-3">CONSIDERA NECESARIO UN SISTEMA DE VIGILANCIA PARA EL CONTROL EPIDEMIOLÓGICO EN LA AMMED
+      </span>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">SI</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">NO</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <span class="h4 mt-3">CONOCE UD ALGÚN MÉTODO DE VIGILANCIA EPIDEMIOLÓGICA (EN CASO DE SER AFIRMATIVA SU RESPUESTA INDIQUE CÚAL)
+      </span>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">SI</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">NO</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba.
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary vac-agregar" type="submit">Agregar</button>
+      </div>
+    </form>
+
+        <!--
+      PACIENTES EN RECUPERACION id = "recu-"
+      -->
+
+    <form class="row g-3 needs-validation contenedor-1 form2" novalidate>
+      <span class="h3 mb-3"> Pacientes en Recuperación </span>
+      <div class="col-md-6">
+        <label for="recu-nombre" class="form-label">Nombres</label>
+        <input type="text" class="form-control nombre2" id="recu-nombre" required>
+        <div class="valid-feedback">
+          Bien
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="recu-apellido" class="form-label">Apellidos</label>
+        <input type="text" class="form-control apellido2" id="recu-apellido"  required>
+        <div class="valid-feedback">
+          Bien
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="recu-cedula" class="form-label">Cedula</label>
+        <input type="text" class="form-control cedula2" id="recu-cedula"  required>
+        <div class="valid-feedback">
+          Bien
+        </div>
+      </div>
+      <div class="col-md-4">
+          <label for="recu-genero" class="form-label">Genero</label>
+          <select class="form-select genero2" id="recu-genero" required>
+            <option selected disabled value=""></option>
+            <option>Masculino</option>
+            <option>Femenino</option>
+          </select>
+          <div class="invalid-feedback">
+            Por favor elija una opción
+          </div>
+        </div>
+      <div class="col-md-5">
+        <label for="recu-edad" class="form-label">Edad</label>
+        <input type="number" class="form-control edad2" id="recu-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba la edad del paciente. 
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="recu-año" class="form-label">Año Cursante </label>
+        <select class="form-select año2" id="recu-año" required>
+          <option selected disabled value=""></option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>PC</option>
+        </select>
+        <div class="invalid-feedback">
+          Por favor elija una opción
+        </div>
+      </div>
+      <div class="col-md-6">
+          <label for="recu-estado" class="form-label">Estado del paciente</label>
+          <select class="form-select estado2" id="recu-estado" required>
+            <option selected disabled value=""></option>
+            <option>Sintomáticos</option>
+            <option>Asintomáticos</option>
+          </select>
+          <div class="invalid-feedback">
+            Por favor elija una opción
+          </div>
+      </div>
+      <div class="mb-12">
+          <label for="recu-tratamiento" class="form-label">Condición del Paciente</label>
+          
+          <select class="form-select tratamiento2" id="recu-tratamiento" required>
+            <option selected disabled value=""></option>
+            <option>Aislado</option>
+            <option>Recibiendo tratamiento con acetaminofén 500MG </option>
+          </select>
+          
+      </div>
+      
+      <div class="col-12">
+        <button class="btn btn-primary recu-agregar" type="submit">Agregar</button>
+      </div>
+    </form>
+
+
+
+      <!--
+      PACIENTES Recuperados id=" alta- "
+      -->
+
+    <form class="row g-3 needs-validation contenedor-1 form3" novalidate>
+      <span class="h3 mb-3"> Pacientes Recuperados</span>
+      <div class="col-md-6">
+        <label for="alta-nombre" class="form-label">Nombres</label>
+        <input type="text" class="form-control nombre3" id="alta-nombre" required>
+        <div class="valid-feedback">
+          Bien
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="alta-apellido" class="form-label">Apellidos</label>
+        <input type="text" class="form-control apellido3" id="alta-apellido"  required>
+        <div class="valid-feedback">
+          Bien
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="alta-cedula" class="form-label">Cedula</label>
+        <input type="text" class="form-control cedula3" id="alta-cedula"  required>
+        <div class="valid-feedback">
+          Bien
+        </div>
+      </div>
+      <div class="col-md-4">
+          <label for="alta-genero" class="form-label">Genero</label>
+          <select class="form-select genero3" id="alta-genero" required>
+            <option selected disabled value=""></option>
+            <option>Masculino</option>
+            <option>Femenino</option>
+          </select>
+          <div class="invalid-feedback">
+            Por favor elija una opción
+          </div>
+      </div>
+      <div class="col-md-5">
+        <label for="alta-edad" class="form-label">Edad</label>
+        <input type="number" class="form-control edad3" id="alta-edad" required>
+        <div class="invalid-feedback">
+          Por favor escriba la edad del paciente. 
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="alta-año" class="form-label">Año Cursante </label>
+        <select class="form-select año3" id="alta-año" required>
+          <option selected disabled value=""></option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+        </select>
+        <div class="invalid-feedback">
+          Por favor elija una opción
+        </div>
+      </div>
+      <div class="col-md-6">
+          <label for="alta-estado" class="form-label">Estado del paciente</label>
+          <select class="form-select estado3" id="alta-estado" required>
+            <option selected disabled value=""></option>
+            <option>RECUPERADO</option>
+            <option>EN OBSERVACIÓN</option>
+          </select>
+          <div class="invalid-feedback">
+            Por favor elija una opción
+          </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary alta-agregar" type="submit">Agregar</button>
+      </div>
+    </form>
+
+
+      <!--
+      FALLECIDOS id = " fa "
+      -->
+
+      <form class="row g-3 needs-validation contenedor-1 form4" novalidate>
+          <span class="h3 mb-3">Fallecidos</span>
+          <div class="col-md-6">
+            <label for="fa-nombre" class="form-label">Nombres</label>
+            <input type="text" class="form-control nombre4" id="fa-nombre" required>
+            <div class="valid-feedback">
+              Bien
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="fa-apellido" class="form-label">Apellidos</label>
+            <input type="text" class="form-control apellido4" id="validationCustom02"  required>
+            <div class="valid-feedback">
+              Bien
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="fa-cedula" class="form-label">Cedula</label>
+            <input type="text" class="form-control cedula4" id="fa-cedula"  required>
+            <div class="valid-feedback">
+              Bien
+            </div>
+          </div>
+          <div class="col-md-4">
+              <label for="fa-genero" class="form-label">Genero</label>
+              <select class="form-select genero4" id="fa-genero" required>
+                <option selected disabled value=""></option>
+                <option>Masculino</option>
+                <option>Femenido</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor elija una opción
+              </div>
+            </div>
+          <div class="col-md-5">
+            <label for="fa-edad" class="form-label">Edad</label>
+            <input type="number" class="form-control edad4" id="fa-edad" required>
+            <div class="invalid-feedback">
+              Por favor escriba la edad del paciente. 
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="fa-año" class="form-label">Año Cursante </label>
+            <select class="form-select año4" id="fa-año" required>
+              <option selected disabled value=""></option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+            <div class="invalid-feedback">
+              Por favor elija una opción
+            </div>
+          </div>
+          
+          <div class="col-12">
+            <button class="btn btn-primary fa-agregar" type="submit">Agregar</button>
+          </div>
+        </form>
+
+          <!--
+  NOTICIAS class= " not- "
+  -->
+
+  <form class="row g-3 needs-validation contenedor-1 form5" novalidate>
+    <span class="h3 mb-3">Noticias</span>
+    <div class="mb-3">
+        <label for="not-image" class="form-label">Elija una Imagen</label>
+        <input class="form-control" type="file" id="not-image" required>
+      </div>
+    <div class="col-md-6">
+      <label for="not-link" class="form-label">Link de la Pagina Fuente</label>
+      <input type="text" class="form-control" id="not-link"  required>
+      <div class="valid-feedback">
+        Es necesario el link de la pagina fuente
+      </div>
+    </div>
+    <div class="col-md-8">
+        <label for="not-titulo" class="form-label">Titulo</label>
+        <input type="text" class="form-control" id="not-titulo" required>
+        <div class="invalid-feedback">
+          Por favor escriba el titulo de la noticia 
+        </div>
+      </div>
+    <div class="mb-12">
+        <label for="not-descripcion" class="form-label">Descripcion de la Noticia</label>
+        <textarea class="form-control" id="not-descripcion" rows="3" required></textarea>
+        <div id="emailHelp" class="form-text">Esta descripcion debe tener entre 10 y 30 caracteres</div>
+        <div class="invalid-feedback">
+            Escriba una breve descripcion de la noticia 
+        </div>
+    </div>
+    
+    <div class="col-12">
+      <button class="btn btn-primary fa-agregar" type="submit">Agregar</button>
+    </div>
+  </form>
+</div>
+      <!--jquery-->
+    <script src="jquey/jquey.js"></script>
+      <!--codigo-->
+      <script src="assets/js/validacion.js"></script>
+      <script src="assets/js/codigo.js"></script>
+    <script src="assets/js/localStorage.js"></script>
+    
+    
+      <!--BOOTSTRAP-->
+      <script src="bootstrap/js/bootstrap.js"></script>
+    </body>
+    </html>

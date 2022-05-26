@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>AMMED Analytics</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link rel="icon" type="image/jpg"   href="assets/img/logito2.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"> <!--fuentes de servicio-->
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!--Fontello-->
+  <link href="assets/css/css/fontello.css" rel="stylesheet">
+  <link rel="stylesheet" href="../fuentes/fontello-235bc0aa/css/fontello.css">
+
+  <!-- Popup CSS -->
+  <link rel="stylesheet" href="../popup/popup.css">
+
+  <!-- Chart JS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/Chart.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi icon-globe"></i> <a href="https://academiamilitardemedicina.com.ve/">academiamilitardemedicina.com.ve/</a>
+
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo-header justify-content-start">
+        <a href="index.html"><img src="assets/img/logosamu2.png" alt="" class="logo-h"></a>
+      </div>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0 justify-content-end">
+        <ul>
+          <li><a class="nav-link scrollto" href="../index.html#hero">Principal</a></li>
+          <li><a class="nav-link scrollto" href="Numero-de-Contagios/index.html#contagios">Total de Contagios</a></li>
+          <li><a class="nav-link scrollto" href="../Sintomaticos-y-asintomaticos/index.html#SyA">Sintomáticos y Asintomáticos</a></li>
+          <li><a class="nav-link scrollto" href="#registro">Registro</a></li>
+          <li class="dropdown"><a href="#"><span>Más</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../index.html#counts">Número de Casos</a></li>
+              <li><a href="../index.html#estadistica">Estadística General</a></li>
+              <li><a href="../index.html#recuperacion">Recuperados</a></li>
+              <li><a href="../index.html#services">Información y Recomndaciones</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a href="#appointment" class="appointment-btn scrollto btn-popup" id="btn-popup">Administrador </a>
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Counts Section ======= -->
+  <section id="counts" class="counts">
+    <div class="container" id="registro">
+      <br>
+      <br>
+      <div  class="section-title">
+        <h2>Registro</h2>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="count-box" id="count-box1">
+            
+            <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Casos Nuevos</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-md-0 ">
+          
+            <div class="count-box" id="count-box2">
+              
+              <span data-purecounter-start="0" data-purecounter-end="33" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Total De Contagios</p>
+            </div>
+
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="count-box" id="count-box3">
+            
+            <span data-purecounter-start="0" data-purecounter-end="17" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Pacientes Recuperados</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 despues">
+          <a href="index.html" class="non">
+            <div class="count-box" id="count-box4">
+            
+              <span data-purecounter-start="0" data-purecounter-end="16" data-purecounter-duration="1" class="purecounter"></span>
+              <p>En Recuperación</p>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+      <br>
+      <div class="row justify-content-center">
+
+        <div class="col-lg-3 col-md-6">
+ 
+
+            <div class="count-box" id="count-box1">
+              
+              <span data-purecounter-start="0" data-purecounter-end="231" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Vacunados</p>
+            </div>
+
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+          <div class="count-box" id="count-box2">
+            
+            <span data-purecounter-start="0" data-purecounter-end="0" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Fallecidos</p>
+          </div>
+        </div>
+
+
+        
+
+    </div>
+    
+  </section><!-- End Counts Section -->
+
+  <main id="">
+    <!-- ======= Registro de Pacientes por AÑO======= -->
+
+
+
+
+
+    <div  class="section-title mb-4">
+      <h2>Vacunados</h2>
+    </div>
+
+    <!-- =======PRIMER AÑO CLASE:>>>> primero======= -->
+<div class="container mb-5">
+  <div  class="section-title">
+    <h3>Primer Año</h3>
+  </div>
+
+        <div class="row justify-content-center">
+          
+          <div class="col-xl-4 d-flex align-items-stretch">
+
+           
+            
+              <div class="icon-box-none  mt-4 mt-xl-0">
+                <div class="contenedor-imagen mb-3">
+    
+                  <img src="assets/img/masculino.png" alt="">
+                </div>
+                <br>
+                <h2>Maculinos</h2>
+                <div class="contagiados">
+                  <h6>Vacunados</h6>
+                   <p class="num-con">10</p>
+                </div>
+            
+              </div>
+        
+          </div>
+
+          <div class="col-xl-4 d-flex align-items-stretch">
+
+       
+              <div class="icon-box-none mt-4 mt-xl-0">
+                
+                <div class="contenedor-imagen2 mb-3">
+    
+                  <img src="assets/img/femenino.png" alt="">
+                </div>
+                <br>
+                <h2>Femeninos</h2>
+                <div class="contagiados">
+                  <h6>Vacunados</h6>
+                  <p class="num-con">21</p>
+                </div>
+  
+              </div>
+      
+          </div>
+        </div>
+ 
+  
+
+</div>
+
+<div class="container mb-5">
+  <div  class="section-title">
+    <h3>Segundo Año</h3>
+  </div>
+
+  <div class="row justify-content-center">
+          
+    <div class="col-xl-4 d-flex align-items-stretch">
+      <div class="icon-box-none mt-4 mt-xl-0">
+        <div class="contenedor-imagen mb-3">
+
+          <img src="assets/img/masculino.png" alt="">
+        </div>
+        <br>
+        <h2>Maculinos</h2>
+        <div class="contagiados">
+          <h6>Vacunados</h6>
+           <p class="num-con">10</p>
+        </div>
+    
+      </div>
+    </div>
+
+    <div class="col-xl-4 d-flex align-items-stretch">
+      <div class="icon-box-none mt-4 mt-xl-0">
+        
+        <div class="contenedor-imagen2 mb-3">
+
+          <img src="assets/img/femenino.png" alt="">
+        </div>
+        <br>
+        <h2>Femeninos</h2>
+        <div class="contagiados">
+          <h6>Vacunados</h6>
+          <p class="num-con">17</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="container mb-5">
+  <div  class="section-title">
+    <h3>Tercer Año</h3>
+  </div>
+
+  <div class="row justify-content-center">
+          
+    <div class="col-xl-4 d-flex align-items-stretch">
+      <div class="icon-box-none mt-4 mt-xl-0">
+        <div class="contenedor-imagen mb-3">
+
+          <img src="assets/img/masculino.png" alt="">
+        </div>
+        <br>
+        <h2>Maculinos</h2>
+        <div class="contagiados">
+          <h6>Vacunados</h6>
+           <p class="num-con">11</p>
+        </div>
+    
+      </div>
+    </div>
+
+    <div class="col-xl-4 d-flex align-items-stretch">
+      <div class="icon-box-none mt-4 mt-xl-0">
+        
+        <div class="contenedor-imagen2 mb-3">
+
+          <img src="assets/img/femenino.png" alt="">
+        </div>
+        <br>
+        <h2>Femeninos</h2>
+        <div class="contagiados">
+          <h6>Vacunados</h6>
+          <p class="num-con">25</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<div class="container mb-5">
+  <div  class="section-title">
+    <h3>Cuarto Año</h3>
+  </div>
+
+  <div class="row justify-content-center">
+          
+    <div class="col-xl-4 d-flex align-items-stretch">
+      <div class="icon-box-none mt-4 mt-xl-0">
+        <div class="contenedor-imagen mb-3">
+
+          <img src="assets/img/masculino.png" alt="">
+        </div>
+        <br>
+        <h2>Maculinos</h2>
+        <div class="contagiados">
+          <h6>Vacunados</h6>
+           <p class="num-con">13</p>
+        </div>
+    
+      </div>
+    </div>
+
+    <div class="col-xl-4 d-flex align-items-stretch">
+      <div class="icon-box-none mt-4 mt-xl-0">
+        
+        <div class="contenedor-imagen2 mb-3">
+
+          <img src="assets/img/femenino.png" alt="">
+        </div>
+        <br>
+        <h2>Femeninos</h2>
+        <div class="contagiados">
+          <h6>Vacunados</h6>
+          <p class="num-con">22</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="container mb-5">
+  <div  class="section-title">
+    <h3>Quinto Año</h3>
+  </div>
+
+  <div class="row justify-content-center">
+          
+    <div class="col-xl-4 d-flex align-items-stretch">
+      <div class="icon-box-none mt-4 mt-xl-0">
+        <div class="contenedor-imagen mb-3">
+
+          <img src="assets/img/masculino.png" alt="">
+        </div>
+        <br>
+        <h2>Maculinos</h2>
+        <div class="contagiados">
+          <h6>Vacunados</h6>
+           <p class="num-con">14</p>
+        </div>
+    
+      </div>
+    </div>
+
+    <div class="col-xl-4 d-flex align-items-stretch">
+      <div class="icon-box-none mt-4 mt-xl-0">
+        
+        <div class="contenedor-imagen2 mb-3">
+
+          <img src="assets/img/femenino.png" alt="">
+        </div>
+        <br>
+        <h2>Femeninos</h2>
+        <div class="contagiados">
+          <h6>Vacunados</h6>
+          <p class="num-con">36</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5">
+  <div  class="section-title">
+    <h3>Sexto Año</h3>
+  </div>
+
+  <div class="row justify-content-center">
+          
+    <div class="col-xl-4 d-flex align-items-stretch">
+      <div class="icon-box-none mt-4 mt-xl-0">
+        <div class="contenedor-imagen mb-3">
+
+          <img src="assets/img/masculino.png" alt="">
+        </div>
+        <br>
+        <h2>Maculinos</h2>
+        <div class="contagiados">
+          <h6>Vacunados</h6>
+           <p class="num-con">38</p>
+        </div>
+    
+      </div>
+    </div>
+
+    <div class="col-xl-4 d-flex align-items-stretch">
+      <div class="icon-box-none mt-4 mt-xl-0">
+        
+        <div class="contenedor-imagen2 mb-3">
+
+          <img src="assets/img/femenino.png" alt="">
+        </div>
+        <br>
+        <h2>Femeninos</h2>
+        <div class="contagiados">
+          <h6>Vacunados</h6>
+          <p class="num-con">16</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+    
+  </main>
+  <!-- ======= Footer ======= -->
+
+  <div class="overlay" id="overlay">
+
+    <div class="popup shadow" >
+      <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup close"><i class="icon-cancel"></i></a>
+      <div class="icon-llave shadow ">
+        <i class="icon-key"></i>
+      </div>
+      <h3 class="mb-3">Ingrese Contaseña de Seguridad</h3>
+      <form action="" class="form">
+        <div class="contenedor-inputs">
+          <input type="password" name="" id="" placeholder="Clave" class="form-control mb-1 clave">
+        </div>
+        <br>
+        <input type="submit" class="btn btn-primary  mod" value="Confirmar">
+      </form>
+
+    </div>
+  </div>
+  <footer id="footer">
+
+    
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>AMMEDAnalytics</span></strong>. Todos Los Derechos Reservados
+        </div>
+       
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+  <!-- Jquery -->
+  <script src="assets/js/jquey/jquey.js"></script>
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <!-- <script src="assets/js/cod.js"></script> -->
+
+   <!-- Codigo para el Poput o Ventana emergente de administrador-->
+   <script src="../popup/popup.js"></script>
+
+
+</body>
+
+</html>
+
+<!--
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="primero1">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#registro1" aria-expanded="false" aria-controls="registro1">
+        Estudiante #1
+      </button>
+    </h2>
+    <div id="registro1" class="accordion-collapse collapse" aria-labelledby="primero1" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="primero2">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#registro2" aria-expanded="false" aria-controls="registro2">
+        Estudiante #2
+      </button>
+    </h2>
+    <div id="registro2" class="accordion-collapse collapse" aria-labelledby="primero2" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="primero3">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#registro3" aria-expanded="false" aria-controls="registro3">
+        Estudiante #3
+      </button>
+    </h2>
+    <div id="registro3" class="accordion-collapse collapse" aria-labelledby="primero3" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+-->

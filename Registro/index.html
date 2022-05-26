@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>AMMED Analytics</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link rel="icon" type="image/jpg"   href="assets/img/logito2.png">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"> <!--fuentes de servicio-->
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!--Fontello-->
+  <link href="assets/css/css/fontello.css" rel="stylesheet">
+  <link rel="stylesheet" href="../fuentes/fontello-235bc0aa/css/fontello.css">
+
+  <!-- Popup CSS -->
+  <link rel="stylesheet" href="../popup/popup.css">
+
+  <!-- Chart JS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi icon-globe"></i> <a href="https://academiamilitardemedicina.com.ve/">academiamilitardemedicina.com.ve/</a>
+
+      </div>
+      <div class="d-none d-lg-flex social-links align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo-header justify-content-start">
+        <a href="index.html"><img src="assets/img/logosamu2.png" alt="" class="logo-h"></a>
+      </div>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0 justify-content-end">
+        <ul>
+          <li><a class="nav-link scrollto" href="../index.html#hero">Principal</a></li>
+          <li><a class="nav-link scrollto" href="../Numero-de-Contagios/index.html#contagios">Patologías</a></li>
+          <li><a class="nav-link scrollto" href="../Sintomaticos-y-asintomaticos/index.html#SyA">Sintomas Ult. 3 meses</a></li>
+          <li><a class="nav-link scrollto" href="#registro">Atención Medica</a></li>
+          <li class="dropdown"><a href="#"><span>Más</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="../index.html#estadistica">Antecedentes</a></li>
+              <li><a href="../index.html#recuperacion">Habitos Psicobiologicos</a></li>
+              <li><a href="../index.html#services">Información y Recomndaciones</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <a href="#appointment" class="appointment-btn scrollto btn-popup" id="btn-popup">Administrador </a>
+
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <main class="counts " id="registro">
+    <div class="container">
+
+    
+    <div class="row" id="">
+      <div  class="section-title">
+        <h2>Fue atendido por personal no médico</h2>
+      </div>
+        <div class="card-block col-12 align-items-center justify-content-center">
+            <canvas id="myChart13" ></canvas>
+          
+          
+
+        </div>
+        
+    </div>
+    <div class="row justify-content-center mt-4 ">
+      <div class="col-sm-5 shadow-sm rounded m-2 pb-3">
+          <canvas id="myChart14"></canvas>
+      </div>
+      <div class="col-sm-5 shadow-sm rounded m-2 pb-3">
+          <canvas id="myChart15"></canvas>
+      </div>
+      <div class="col-sm-5 shadow-sm rounded m-2 pb-3">
+          <canvas id="myChart16"></canvas>
+      </div>
+      <div class="col-sm-5 shadow-sm rounded m-2 pb-3">
+          <canvas id="myChart17"></canvas>
+      </div>
+  </div>
+</div>
+
+  </main>
+  <!-- ======= Footer ======= -->
+
+  <div class="overlay" id="overlay">
+
+    <div class="popup shadow" >
+      <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup close"><i class="icon-cancel"></i></a>
+      <div class="icon-llave shadow ">
+        <i class="icon-key"></i>
+      </div>
+      <h3 class="mb-3">Ingrese Contaseña de Seguridad</h3>
+      <form action="" class="form">
+        <div class="contenedor-inputs">
+          <input type="password" name="" id="" placeholder="Clave" class="form-control mb-1 clave">
+        </div>
+        <br>
+        <input type="submit" class="btn btn-primary  mod" value="Confirmar">
+      </form>
+
+    </div>
+  </div>
+  <footer id="footer">
+
+    
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>AMMEDAnalytics</span></strong>. Todos Los Derechos Reservados
+        </div>
+       
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+  <!-- Jquery -->
+  <script src="assets/js/jquey/jquey.js"></script>
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/codigo.js"></script>
+  <!-- <script src="assets/js/cod.js"></script> -->
+
+   <!-- Codigo para el Poput o Ventana emergente de administrador-->
+   <script src="../popup/popup.js"></script>
+
+
+</body>
+
+</html>
+
+<!--
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="primero1">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#registro1" aria-expanded="false" aria-controls="registro1">
+        Estudiante #1
+      </button>
+    </h2>
+    <div id="registro1" class="accordion-collapse collapse" aria-labelledby="primero1" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="primero2">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#registro2" aria-expanded="false" aria-controls="registro2">
+        Estudiante #2
+      </button>
+    </h2>
+    <div id="registro2" class="accordion-collapse collapse" aria-labelledby="primero2" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="primero3">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#registro3" aria-expanded="false" aria-controls="registro3">
+        Estudiante #3
+      </button>
+    </h2>
+    <div id="registro3" class="accordion-collapse collapse" aria-labelledby="primero3" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+    </div>
+  </div>
+-->
