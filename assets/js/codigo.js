@@ -5,10 +5,10 @@ let ctx = document.getElementById("myChart");
 let myChart = new Chart(ctx,{
     type: "bar",
     data:{
-        labels:['HTA','DM2','ASMA', 'ALERGIA A MEDICAMENTOS', 'NINGUNO'],
+        labels:['ALERGIA A MEDICAMENTOS','DIABETES MELLITUS','ASMA', 'HTA', 'NINGUNO'],
         datasets: [{
             label: '',
-            data:[5,0,12,0,83],
+            data:[5,1,12,1,83],
             backgroundColor:[
                 'rgba(103,58,183,.8)',
                 'rgba(233,30,99,.8)'
@@ -117,7 +117,7 @@ let myChart2 = new Chart(ctx2,{
           },
           title: {
             display: true,
-            text: 'SEXO'
+            text: 'GENERO GRUPO ESTUDIO'
           }
         }
         

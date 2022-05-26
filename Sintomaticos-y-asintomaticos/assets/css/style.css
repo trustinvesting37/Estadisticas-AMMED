@@ -9,6 +9,9 @@
   --color3: #f79937;
   --color4: #1aacb0;
 }
+.margen{
+  margin: auto;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
